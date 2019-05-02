@@ -53,4 +53,3 @@ while($result = $query->fetch_assoc()){
 }
 
 mysqli_close($connection);
-session_destroy(); 

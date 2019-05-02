@@ -3,6 +3,8 @@ ini_set('session.gc_maxlifetime', 60*60*24*365);
 session_start(); 
 ?>
 
+reuqire 'config.php';
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,7 +64,7 @@ session_start();
 		</thead>
 		<tbody>
 			<?php 
-				$connection = new mysqli("localhost", "foxyjoe_test", "qwertycoder123", "foxyjoe_test");
+				$connection = new mysqli($db_host, $db_user, $db_password, $db_name);
 				
 				if($connection === false){
 					die("ERROR: Could not connect. " . mysqli_connect_error());

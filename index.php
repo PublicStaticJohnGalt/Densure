@@ -3,7 +3,7 @@ ini_set('session.gc_maxlifetime', 60*60*24*365);
 session_start(); 
 ?>
 
-reuqire 'config.php';
+require 'config.php';
 
 <!DOCTYPE html>
 <html>
